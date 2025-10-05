@@ -19,6 +19,43 @@
         <button type="submit">Register</button>
         <div id="form-feedback"></div>
     </form>
+    
+    <!-- Interactive Quiz Section -->
+    <div id="quiz-container">
+        <h2>Interactive Quiz</h2>
+        
+        <div class="quiz-question" data-question="question1">
+            <p>What is the capital of France?</p>
+            <label><input type="radio" name="question1" value="london"> London</label>
+            <label><input type="radio" name="question1" value="paris"> Paris</label>
+            <label><input type="radio" name="question1" value="berlin"> Berlin</label>
+            <label><input type="radio" name="question1" value="madrid"> Madrid</label>
+            <div class="question-feedback"></div>
+        </div>
+        
+        <div class="quiz-question" data-question="question2">
+            <p>What color do you get when you mix red and blue?</p>
+            <label><input type="radio" name="question2" value="green"> Green</label>
+            <label><input type="radio" name="question2" value="purple"> Purple</label>
+            <label><input type="radio" name="question2" value="orange"> Orange</label>
+            <label><input type="radio" name="question2" value="yellow"> Yellow</label>
+            <div class="question-feedback"></div>
+        </div>
+        
+        <div class="quiz-question" data-question="question3">
+            <p>How many sides does a square have?</p>
+            <label><input type="radio" name="question3" value="3"> 3</label>
+            <label><input type="radio" name="question3" value="4"> 4</label>
+            <label><input type="radio" name="question3" value="5"> 5</label>
+            <label><input type="radio" name="question3" value="6"> 6</label>
+            <div class="question-feedback"></div>
+        </div>
+        
+        <button id="submit-answer">Submit Answer</button>
+        <div id="quiz-score"></div>
+    </div>
+    
     <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
